@@ -1,8 +1,8 @@
-export function Blog_card() {
+export function BlogCard() {
   return (
     <>
-      <div className="card w-[35vw] h-[22vh] bg-base-100 trendingCard m-5 overflow-hidden">
-        <div className="p-3 m-2">
+      <div className="card w-[35vw] h-[35vh] bg-base-100 trendingCard m-5 overflow-hidden">
+        <div className="p-3">
           <p>[Name]</p>
           <h2 className="card-title">Shoes!</h2>
           <p className="m-1">
@@ -11,8 +11,8 @@ export function Blog_card() {
             eveniet animi aspernatur eos, modi eligendi ad illo debitis sunt nam
             quo.
           </p>
-          <button className="btn btn-xs m-1">Discuss</button>
-          <button className="btn btn-xs m-1">Like</button>
+          <button className="m-1 btn btn-xs">Discuss</button>
+          <button className="m-1 btn btn-xs">Like</button>
         </div>
       </div>
     </>

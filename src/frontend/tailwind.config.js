@@ -5,12 +5,27 @@ export default {
   theme: {
     extend: {
       colors: {
-          bannerColor: "f1faee"
-      }
+        accentColor: "#ff785c",
+        bgColor: "#f2eeeb"
+      },
+      fontFamily: {
+        poppins: ["poppins", "sans-serif"],
+      },
     },
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["light"]
-  }
+      themes: [
+      {
+        mytheme: {
+          accent: "#ff785c",
+          primary: "#ff785c",
+          secondary: "#f6d860",
+          neutral: "#3d4451",
+          "base-100": "#ffffff",
+        },
+      },
+    ],
+    // themes: ["light"],
+  },
 };
