@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+.trendingCard {
+  box-shadow:
+    0 0 0 2px white,
+    0.3em 0.3em 1em hsla(0, 0%, 0%, 0.387);
+}
