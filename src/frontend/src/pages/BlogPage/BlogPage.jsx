@@ -1,4 +1,5 @@
 import BlogImg from "../../assets/Hamburger-and-french-fries-paper-box.webp";
+import Footer from "../../components/Footer";
 import { Nav } from "../../nav";
 const BlogPage = () => {
   return (
@@ -8,15 +9,15 @@ const BlogPage = () => {
         <img src={BlogImg} alt="image" />
       </div>
       <div className="w-[35rem] mx-auto text-left">
-        <h1 className="my-3 py-2">SavoutIt at new heights</h1>
+        <h1 className="py-2 my-3">SavoutIt at new heights</h1>
       </div>
       <div className="w-[35rem] mx-auto rounded-md flex flex-col items-start">
         <div className="avatar">
           <div className="w-8 rounded-full">
             <img src={BlogImg} />
           </div>
-          <p className="text-xs pl-2">Amanda</p>
-          <p className="text-xs pl-2">Amanda</p>
+          <p className="pl-2 text-xs">Amanda</p>
+          <p className="pl-2 text-xs">Amanda</p>
         </div>
       </div>
       <div className="w-[35rem] mx-auto border-2 rounded-md flex flex-col items-start p-2 my-3 text-xs">
@@ -60,6 +61,7 @@ const BlogPage = () => {
           optio cum debitis hic nemo.
         </p>
       </div>
+      <Footer/>
     </>
   );
 };
