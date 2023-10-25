@@ -1,10 +1,14 @@
+import { Nav } from "./nav";
+import { Banner } from "./banner";
+import { Trending_dish } from "./Trending_dishes";
+import {Trending_blogs} from "./Trending_blogs"
 const App = () => {
     return (
         <>
-            <div className="p-20">
-                <div className="bg-green-200">Tailwind</div>
-                <button className="btn btn-accent">Daisy UI</button>
-            </div>
+        <Nav/>
+        <Banner/>
+        <Trending_dish/>
+        <Trending_blogs/>
         </>
     );
 };
