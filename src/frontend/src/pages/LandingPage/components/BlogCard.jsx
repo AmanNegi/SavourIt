@@ -1,5 +1,8 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 export function BlogCard({ name, description, image }) {
+  var navigate = useNavigate();
+
   return (
     <>
       <div className="rounded-lg relative w-[100%] h-[50vh] bg-base-100 trendingCard overflow-hidden p-3">
@@ -15,11 +18,13 @@ export function BlogCard({ name, description, image }) {
           <p className='text-sm'> ~ Aster Joules</p>
         </div>
         <div className="absolute bottom-2 right-2">
-          <button className="btn btn-outline">Read More</button>
+          <button onClick={() => {
+            navigate("/blogDetail");
+          }} className="btn btn-outline">Read More</button>
         </div>
 
 
-      </div>
+      </div >
     </>
   );
 }
