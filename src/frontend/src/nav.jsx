@@ -1,10 +1,22 @@
 import logo from "./assets/logo.png";
+import PropTypes from 'prop-types'; // ES6
+
+
 export function Nav() {
   return (
     <>
-      <div className="navbar bg-base-100">
-        <img src={logo} className="w-[75px] h-[75px]" alt="" />
-        <div className="flex space-x-10">
+      <div className="flex flex-row h-[8vh] bg-base-100 items-center">
+        <img src={logo} className="w-[50px] h-[50px] mr-3" alt="" />
+
+        <NavBarItem name="Home" />
+        <NavBarItem name="About" />
+        <NavBarItem name="Blog" />
+
+        <div className="flex-1"></div>
+
+        <NavBarItem name="Search" />
+
+        {/* <div className="flex space-x-10">
           <a className="text-xl normal-case btn btn-ghost">Home</a>
           <a className="text-xl normal-case btn btn-ghost">About</a>
           <a className="text-xl normal-case btn btn-ghost">Blog</a>
@@ -48,8 +60,24 @@ export function Nav() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
 }
+
+
+function NavBarItem({ name }) {
+  console.log(name);
+  return (
+    <>
+      <div className="flex items-center justify-center h-[8vh] px-6 hover:bg-gray-200">
+        <h2 >{name}</h2>
+      </div>
+    </>
+  );
+}
+
+NavBarItem.propTypes = {
+  name: PropTypes.string.isRequired,
+};

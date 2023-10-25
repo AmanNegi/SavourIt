@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +14,13 @@ body {
 }
 
 .trendingCard {
-  box-shadow:
-    0 0 0 2px white,
-    0.3em 0.3em 1em hsla(0, 0%, 0%, 0.387);
+  box-shadow: 0 0 0 2px white, 0.3em 0.3em 1em hsla(0, 0%, 0%, 0.151);
+}
+
+h1 {
+  @apply text-4xl font-semibold;
+}
+
+h2 {
+  @apply text-xl;
 }

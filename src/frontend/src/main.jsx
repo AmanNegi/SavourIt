@@ -5,7 +5,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <main className="box-border">
+    <main className="box-border font-poppins">
       <App />
     </main>
   </React.StrictMode>
