@@ -2,16 +2,16 @@ import { Dish_card } from "./dishes_card";
 export function Trending_dish() {
   return (
     <>
-      <div className="navbar bg-base-100">
-        <div className="navbar-start bg-green-100 ml-4">
+      <div className="flex flex-row mx-20 mt-4">
+        <div className="">
           <p className="text-3xl">Trending Dishes</p>
         </div>
-        <div className="navbar-end">
+        <div className="flex-1"></div>
+        <div className="">
           <a className="btn">Button</a>
         </div>
       </div>
-      <div className="flex gap-[5vw]">
-        <div className="flex-1"></div>
+      <div className="flex ml-15">
         <Dish_card />
         <Dish_card />
         <Dish_card />
