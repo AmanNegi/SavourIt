@@ -1,20 +1,30 @@
-export function BlogCard() {
+import PropTypes from 'prop-types';
+export function BlogCard({ name, description, image }) {
   return (
     <>
-      <div className="card w-[35vw] h-[35vh] bg-base-100 trendingCard m-5 overflow-hidden">
-        <div className="p-3">
-          <p>[Name]</p>
-          <h2 className="card-title">Shoes!</h2>
-          <p className="m-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-            voluptates fugiat et neque ducimus tempore minus inventore quos
-            eveniet animi aspernatur eos, modi eligendi ad illo debitis sunt nam
-            quo.
+      <div className="rounded-lg relative w-[100%] h-[50vh] bg-base-100 trendingCard overflow-hidden p-3">
+        <div className="flex flex-col h-full ">
+          {/* Give me a random image url */}
+          <img className='rounded-lg h-[27vh] w-full object-cover' src={image} alt="" />
+          <h2 className='mt-2 font-bold'>{name}</h2>
+          <p className='text-slate-500'>
+            {description}
           </p>
-          <button className="m-1 btn btn-xs">Discuss</button>
-          <button className="m-1 btn btn-xs">Like</button>
+
+          <div className='flex-1'></div>
+          <p className='text-sm'> ~ Aster Joules</p>
         </div>
+        <div className="absolute bottom-2 right-2">
+          <button className="btn btn-outline">Read More</button>
+        </div>
+
+
       </div>
     </>
   );
 }
+BlogCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};

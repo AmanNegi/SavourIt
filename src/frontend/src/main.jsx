@@ -1,12 +1,22 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import LandingPage from "./pages/LandingPage/LandingPage.jsx";
+import BlogPage from "./pages/BlogPage/BlogPage.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/blog",
+    element: <BlogPage />,
+  }
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <main className="box-border font-poppins">
-      <App />
-    </main>
-  </React.StrictMode>
+  <main className="box-border font-poppins">
+    <RouterProvider router={router} />
+  </main >
 );

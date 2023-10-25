@@ -1,20 +1,33 @@
 import logo from "./assets/logo.png";
 import PropTypes from 'prop-types'; // ES6
+import { BsSearch } from "react-icons/bs";
+import { FaBars } from "react-icons/fa";
 
 
 export function Nav() {
   return (
     <>
       <div className="flex flex-row h-[8vh] bg-base-100 items-center">
-        <img src={logo} className="w-[50px] h-[50px] mr-3" alt="" />
+        <img src={logo} className="w-[8vh] h-[8vh] mx-3" alt="" />
 
         <NavBarItem name="Home" />
         <NavBarItem name="About" />
-        <NavBarItem name="Blog" />
+        <NavBarItem name="Recipies" />
 
         <div className="flex-1"></div>
+        <div className="flex items-center justify-center h-[8vh] px-6 hover:bg-gray-200">
+          <BsSearch />
+        </div>
+        <div className="dropdown dropdown-end">
+          <label tabIndex={0} className="m-1 btn">
+            <FaBars />
+          </label>
+          <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Login</a></li>
+          </ul>
+        </div>
 
-        <NavBarItem name="Search" />
+        {/* <NavBarItem name="Search" /> */}
 
         {/* <div className="flex space-x-10">
           <a className="text-xl normal-case btn btn-ghost">Home</a>
@@ -61,7 +74,7 @@ export function Nav() {
             </div>
           </div>
         </div> */}
-      </div>
+      </div >
     </>
   );
 }
