@@ -6,7 +6,7 @@ const BlogDetailsPage = () => {
   return (
     <>
       <Nav />
-      <div className=" object-cover mx-auto max-w-[700px] h-96 rounded-xl overflow-hidden">
+      <div className="mt-6 object-cover mx-auto max-w-[700px] h-96 rounded-xl overflow-hidden">
         <img src={BlogImg} alt="image" />
       </div>
       <div className="w-[35rem] mx-auto text-left">
