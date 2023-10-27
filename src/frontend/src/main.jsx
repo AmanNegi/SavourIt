@@ -1,10 +1,21 @@
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage.jsx";
 import BlogPage from "./pages/BlogPage/BlogPage.jsx";
 import BlogDetailPage from "./pages/BlogDetailPage/BlogDetailPage.jsx";
+<<<<<<< Updated upstream
 import ItemDetailPage from "./pages/ItemDetailPage/ItemDetailPage.jsx";
+=======
+import Login from "./pages/Auth/Login";
+import SignUp from "./pages/Auth/SignUp";
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import "./index.css";
+import appState from "./data/appstate.js";
+import Search from "./pages/SearchPage/Search.jsx";
+import ShoppingList from "./pages/ShoppingList/ShoppingList.jsx";
+>>>>>>> Stashed changes
 
 const router = createBrowserRouter([
   {
@@ -20,13 +31,34 @@ const router = createBrowserRouter([
     element: <BlogDetailPage />
   },
   {
+<<<<<<< Updated upstream
     path: "/itemDetail",
     element: <ItemDetailPage/>
+=======
+    path: "/login",
+    element: <Login />
+  }
+  ,
+  {
+    path: "/signUp",
+    element: <SignUp />
+  }
+  , {
+    path: "/search",
+    element: <Search />
+  },
+  {
+    path: "/shoppingList",
+    element: <ShoppingList />
+>>>>>>> Stashed changes
   }
 ]);
 
+appState.__init__();
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <main className="box-border font-poppins">
+    <ToastContainer />
     <RouterProvider router={router} />
   </main >
 );
