@@ -22,8 +22,6 @@ export function BlogCard({ name, description, image }) {
             navigate("/blogDetail");
           }} className="btn btn-outline">Read More</button>
         </div>
-
-
       </div >
     </>
   );
