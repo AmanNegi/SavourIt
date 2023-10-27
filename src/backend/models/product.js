@@ -33,6 +33,18 @@ const productSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
+  image: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  shopName: {
+    type: String,
+    required: true,
+  },
 });
 
 productSchema.index({ location: "2dsphere" });
