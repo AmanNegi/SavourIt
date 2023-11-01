@@ -10,15 +10,11 @@ const BlogDetailsPage = ({ title, description, image, ingredients }) => {
   return (
     <>
       <Nav />
-<<<<<<< Updated upstream
       <div className="mt-6 object-cover mx-auto max-w-[700px] h-96 rounded-xl overflow-hidden">
-=======
-      <div className="my-10 object-cover mx-auto max-w-[700px] h-96 rounded-xl overflow-hidden">
->>>>>>> Stashed changes
         <img src={BlogImg} alt="image" />
       </div>
       <div className="w-[35rem] mx-auto text-left">
-        <h1 className="py-2 my-3">{title??"No Title"}</h1>
+        <h1 className="py-2 my-3">{title ?? "No Title"}</h1>
       </div>
 
       <div className="flex mx-auto flex-row h-[10vh] max-w-[700px] px-16 ">
@@ -43,7 +39,7 @@ const BlogDetailsPage = ({ title, description, image, ingredients }) => {
         <div className="absolute right-2 top-2">
           <button onClick={() => {
 
-            addToShoppingList(["Koka", "Thoka","Moka"]);
+            addToShoppingList(["Koka", "Thoka", "Moka"]);
 
           }} className="btn btn-accent">+</button>
         </div>
