@@ -8,7 +8,7 @@ export function BlogCard({ name, description, image }) {
       <div className="rounded-lg relative w-[100%] h-[50vh] bg-base-100 trendingCard overflow-hidden p-3">
         <div className="flex flex-col h-full ">
           {/* Give me a random image url */}
-          <img className='rounded-lg h-[27vh] w-full object-cover' src={image} alt="" />
+          <img className='rounded-lg h-[27vh] w-full object-contain' src={image} alt="" />
           <h2 className='mt-2 font-bold'>{name}</h2>
           <p className='text-slate-500'>
             {description}

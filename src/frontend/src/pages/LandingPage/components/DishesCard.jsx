@@ -1,4 +1,3 @@
-// import dish_one from "../assets/Hamburger-and-french-fries-paper-box.webp";
 import dish_one from "../../../assets/Hamburger-and-french-fries-paper-box.webp";
 import { PropTypes } from 'prop-types'; // ES6
 
@@ -12,11 +11,11 @@ export function DishCard({ name, image, price, shopName }) {
         </div>
         <div className="pl-3">
           <div className="flex flex-row">
-            <h2 className="font-medium">{name ?? "No Title"}</h2>
+            <h2 className="font-medium">{name ?? "Product Title"}</h2>
             <div className="flex-1"></div>
             <h2 className="text-2xl font-bold text-black ">₹{price ?? "0.00"}</h2>
           </div>
-          <p className="text-slate-500" >{shopName ?? "na"}</p>
+          <p className="text-slate-500" >{shopName ?? "ShopName"}</p>
           <div className="my-4 rating">
             <input type="radio" name="rating-2" className="bg-orange-400 mask mask-star-2" />
             <input type="radio" name="rating-2" className="bg-orange-400 mask mask-star-2" checked />

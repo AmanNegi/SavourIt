@@ -1,4 +1,13 @@
 import { BlogCard } from "./BlogCard";
+import tikka from "../../../assets/chicken_tikka.png";
+
+const demoitem = {
+  name: "Panner Tikka",
+  description: "loremipsum loremipsum loremipsum loremipsum loremipsum loremipsum",
+  image: tikka,
+};
+
+
 export function TrendingBlogs() {
   return (
     <>
@@ -17,11 +26,5 @@ export function TrendingBlogs() {
         <BlogCard {...demoitem} />
       </div>
     </>
-  );  
+  );
 }
-
-const demoitem = {
-  name: "Panner Tikka",
-  description: "loremipsum loremipsum loremipsum loremipsum loremipsum loremipsum",
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png"
-};

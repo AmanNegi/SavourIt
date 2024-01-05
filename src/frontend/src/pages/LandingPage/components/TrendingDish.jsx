@@ -11,7 +11,7 @@ export function TrendingDish() {
           <a className="btn">View More</a>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-3 mx-16 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 ml-[5vw] sm:grid-cols-2 lg:grid-cols-4">
         <DishCard />
         <DishCard />
         <DishCard />

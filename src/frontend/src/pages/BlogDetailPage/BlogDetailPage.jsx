@@ -84,10 +84,10 @@ const BlogDetailsPage = ({ title, description, image, ingredients }) => {
   );
 };
 BlogDetailsPage.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  ingredients: PropTypes.arrayOf(PropTypes.string).isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  ingredients: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default BlogDetailsPage;
